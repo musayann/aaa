@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+
+  <!-- ... -->
+</head>
+<body>
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="h-screen bg-cover flex flex-wrap content-center justify-center">
+  <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <!-- <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Pricing</h2> -->
+      <p class="mt-1 text-4xl font-bold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Art <br> Auction <br> Afghanistan</p>
+      <p class="max-w-xl mt-5 mx-auto text-xl text-gray-50">Buy art and support people in Afghanistan.</p>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="relative py-32 bg-white overflow-hidden">
+  <div class="relative px-4 sm:px-6 lg:px-8">
+    <div class="text-lg max-w-prose mx-auto">
+      <h1>
+        <span class="block text-3xl text-center leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">What is this project about?</span>
+        <span class="mt-2 block text-base text-center text-black font-semibold tracking-wide uppercase">About</span>
+      </h1>
+      <p class="mt-8 prose prose-black prose-lg text-gray-500 leading-8">
+        This project auctions artworks from photographers, musicians, painters and other 
+        artists as <a href="#what-is-an-nft" onclick="toggleElement('faq-1')">NFTs</a> and donates the contributions to <a href="#organisations" onclick="toggleElement('faq-3')">organisations</a> that support Afghans. 
+        For more questions visit our <a href="#faq">FAQs</a>.
+      </p>
+    </div>
+    <div class="mt-6 prose prose-black prose-lg text-gray-500 mx-auto">
+      <blockquote>
+        "The need in Afghanistan is overwhelming and growing fast as conflict escalates and drives
+        more than 393,000 newly displaced people from their homes. They need food, water, shelter,
+        and protection."
+      </blockquote>
+      <p>
+        - Max Mustermann (cshrn).
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Auction Section -->
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="bg-white overflow-hidden">
+        <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+            <div class="relative lg:row-start-1 lg:col-start-2">
+              <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
+                <figure>
+                  <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                    <img class="rounded-lg shadow-lg object-cover object-center" src="https://ipfs.fleek.co/ipfs/bafybeibgetofd5eym4wuevavf5xjq5jryevvi2fwkycqftdfxuapdiamky" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
+                  </div>
+                  <figcaption class="mt-3 flex text-sm text-gray-500">
+                    <!-- Heroicon name: solid/camera -->
+                    <img src="" alt="">
+                    <span class="ml-2">NFT on Zora</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="mt-8 lg:mt-0">
+              <div class="text-base max-w-prose mx-auto lg:max-w-none">
+                <div>
+                    <h3 class="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">Far Away</h3>
+                    <h2 class="mt-2 text-base text-black-600 font-semibold tracking-wide uppercase">Photography</h2>
+                </div>
+                <p class="mt-3 text-lg text-gray-500">Rosi Richter 2019 <br>
+                - When there is nothing there is a possibility for everything.... -
+                </p>
+                <div class="mt-8 inline-flex rounded-md shadow">
+                    <a target="blank" href="https://zora.co/0x4200fbb5d5E2764285e69Cf09861Ec333FFD4055/4664" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-black">
+                      Place Bid
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="bg-gray-50" id="faq">
+  <div class="max-w-7xl mx-auto mt-24 py-12 px-4 sm:p-16 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+      <h2 class="text-center text-3xl font-bold text-gray-900 sm:text-4xl">
+        Frequently asked questions
+      </h2>
+      <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+
+        <div class="pt-6">
+          <dt class="text-lg">
+            <!-- Expand/collapse question button -->
+            <button type="button" onclick="handleBtnClick(event)" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+              <h3 class="font-medium text-gray-900">
+                How do I bid on an artwork?
+              </h3>
+              <span class="ml-6 h-7 flex items-center">
+                <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 hidden" id="faq-0">
+            <div class="mt-8 text-base prose text-gray-500">
+              <p>
+                <strong class="font-bold">Step 1: Create an ethereum wallet</strong><br>
+                Set up your wallet via one of the following platforms:             
+              </p>
+              <ul>
+                  <li>Desktop: <a href="https://metamask.io/">MetaMask</a>. For additional explanation on how to use MetaMask, please watch this 
+                      <a href="https://www.youtube.com/watch?v=Af_lQ1zUnoM">video</a>.
+                  </li>
+                  <li>iOS: <a href="https://rainbow.me/">Rainbow Wallet</a>.</li>
+                  <li>Android: <a href="https://trustwallet.com/">Trust Wallet</a>.</li>
+              </ul>
+
+              <p class="mt-4">
+                  <strong class="font-bold">Step 2: Purchase crypto on a centralised exchange</strong><br>
+                  Here are some exchanges that you can sign up an account with and use:      
+              </p>
+              <ul>
+                  <li><a href="https://www.binance.com/en">Binance</a></li>
+                  <li><a href="https://www.kraken.com/">Kraken</a></li>
+                  <li><a href="https://crypto.com/">crypto.com</a></li>
+              </ul>
+              <p>
+                  Remember to connect your ethereum wallet to the centralised exchange account during the sign up process.
+                  Purchase crypto and transfer the funds from your exchange account to your wallet.                        
+              </p>
+              <p class="mt-4">
+                  <strong class="font-bold">Step 3: Making your transaction</strong><br>
+                  You’re almost done! Now it’s time to bid on some artwork:          
+              </p>
+              <ul>
+                 <li>Connect your wallet to the auction platform</li>
+                  <li>Click on the Zora link of the artwork you wish to bid on</li>
+                  <li>Add your bid amount and click on ‘Place Offer’</li>
+              </ul>
+            </div>
+          </dd>
+        </div>
+
+
+        <div class="pt-6">
+          <dt class="text-lg">
+            <!-- Expand/collapse question button -->
+            <button type="button" onclick="handleBtnClick(event)" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-1" aria-expanded="false">
+              <h3 id="what-is-an-nft" class="font-medium text-gray-900">
+                What is an NFT?
+              </h3>
+              <span class="ml-6 h-7 flex items-center">
+                <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 hidden" id="faq-1">
+            <div class="text-base prose text-gray-500">
+              <p>
+                A non-fungible token (NFT) is a digital asset that is one-of-a-kind and offers 
+                proof of ownership tracked on the blockchain. Things that can be digitally represented, 
+                like pictures, music, videos and more can be turned into an NFT.
+                To learn more, have a look at <a href="https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d">A beginner’s guide to NFTs</a> 
+                by Linda Xie which is a great, easy-to-digest article on NFTs.
+              </p>
+            </div>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt class="text-lg">
+            <!-- Expand/collapse question button -->
+            <button type="button" onclick="handleBtnClick(event)" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-2" aria-expanded="false">
+              <h3 class="font-medium text-gray-900">
+                Aren’t NFTs really bad for the environment?
+              </h3>
+              <span class="ml-6 h-7 flex items-center">
+                <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 hidden" id="faq-2">
+            <div class="text-base prose text-gray-500">
+              <p>
+                We are aware of the environmental impact of NFTs and support the work of communities who are rallying together to counter 
+                their energy consumption and carbon emission costs. This is why we have chosen to host our auction 
+                on <a href="https://zora.co/">Zora</a>, who are actively offsetting their carbon footprint. 
+                Read more about it <a href="https://decrypt.co/60271/zora-nft-carbon-offset-ethereum">here</a>.
+              </p>
+            </div>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt class="text-lg">
+            <!-- Expand/collapse question button -->
+            <button type="button" onclick="handleBtnClick(event)" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-3" aria-expanded="false">
+              <h3 id="organisations" class="font-medium text-gray-900">
+                What organisations are you going to support?
+              </h3>
+              <span class="ml-6 h-7 flex items-center">
+                <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12 hidden" id="faq-3">
+            <div class="text-base prose text-gray-500">
+              <p class="mt-4">
+                <strong id="care-org"><a href="https://www.care.org/">Care.org</a></strong><br>
+                For 75 years, CARE has led the way to a better life for the world’s most vulnerable people. 
+                In 2020, CARE worked in over 100 countries, reaching more than 90 million people through 1,300 projects.
+              </p>
+              <p class="mt-4">
+                <strong id="cshrn"><a href="https://cshrn.af/">Civil Society and Human Rights Network (cshrn)</a></strong><br>
+                For 75 years, CARE has led the way to a better life for the world’s most vulnerable people. 
+                In 2020, CARE worked in over 100 countries, reaching more than 90 million people through 1,300 projects.
+              </p>
+            </div>
+          </dd>
+        </div>
+
+        <!-- More questions... -->
+      </dl>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script>
+  function handleBtnClick(event) {
+      let el_id = event.target.parentElement.getAttribute("aria-controls")
+      // let el_status = event.target.parentElement.getAttribute("aria-expanded")
+      toggleElement(el_id)
+  }
+  function toggleElement(id) {
+    let el = document.getElementById(id);
+      el.classList.toggle("hidden");
+  }
+</script>
+</html>
