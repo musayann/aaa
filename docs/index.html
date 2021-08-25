@@ -83,12 +83,13 @@
               <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
                 <figure>
                   <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
-                    <img class="rounded-lg shadow-lg object-cover object-center" src="https://ipfs.fleek.co/ipfs/bafybeibgetofd5eym4wuevavf5xjq5jryevvi2fwkycqftdfxuapdiamky" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
+                    <img class="rounded-lg shadow-lg object-cover object-center" src="https://ipfs.fleek.co/ipfs/bafybeibgetofd5eym4wuevavf5xjq5jryevvi2fwkycqftdfxuapdiamky" alt="Art work by Rosie Richter" width="1184" height="1376">
                   </div>
                   <figcaption class="mt-3 flex text-sm text-gray-500">
                     <!-- Heroicon name: solid/camera -->
-                    <img src="" alt="">
-                    <span class="ml-2">NFT on Zora</span>
+
+                    <span class="ml-2">NFT on </span>
+                    <img class="inline ml-1 h-5" src="img/zora_logo.png" alt="zora logo">
                   </figcaption>
                 </figure>
               </div>
@@ -102,10 +103,42 @@
                 <p class="mt-3 text-lg text-gray-500">Rosi Richter 2019 <br>
                 - When there is nothing there is a possibility for everything.... -
                 </p>
-                <div class="mt-8 inline-flex rounded-md shadow">
-                    <a target="blank" href="https://zora.co/0x4200fbb5d5E2764285e69Cf09861Ec333FFD4055/4664" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-black">
-                      Place Bid
-                    </a>
+
+                <p class="mt-12 text-lg">
+                  <a class="hover:underline" href="https://www.google.com/search?q=0.07+eth+in+euro">
+                    <strong class="font-semibold">0.07 ETH</strong>
+                  </a>
+                  <span class="text-sm text-gray-500 ml-1">Reserve Price</span>
+
+                </p>
+
+                <div class="mt-2">
+                  <a 
+                    href="https://zora.co/0x4200fbb5d5E2764285e69Cf09861Ec333FFD4055/4664"
+                    target="blank"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-grey-500"
+                  >
+                    Place Bid
+                  </a>
+                  <a
+                    href="https://www.instagram.com/p/Bu9kGBRHoeL/"
+                    target="blank"
+                    class="inline-flex items-center m-2 px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-grey-500"
+                  >
+                    Artist Verification
+                  </a>
+                </div>
+                <div class="text-sm text-gray-500 mt-2">
+                <p>
+                  This artwork supports
+                </p>
+                <a 
+                  class="underline" 
+                  href="#faq"
+                  onclick="toggleElement('faq-3')"
+                >
+                  Civil Society and Human Rights Network
+                </a>
                 </div>
               </div>
             </div>
@@ -222,9 +255,9 @@
           <dd class="mt-2 pr-12 hidden" id="faq-2">
             <div class="text-base prose text-gray-500">
               <p>
-                We are aware of the environmental impact of NFTs and support the work of communities who are rallying together to counter 
-                their energy consumption and carbon emission costs. This is why we have chosen to host our auction 
-                on <a href="https://zora.co/">Zora</a>, who are actively offsetting their carbon footprint. 
+                We are aware of the environmental impact of NFTs and support the work of communities who are rallying 
+                together to counter their energy consumption and carbon emission costs. Artist can choose to host their auctions 
+                on platforms like <a href="https://zora.co/">Zora</a>, who are actively offsetting their carbon footprint. 
                 Read more about it <a href="https://decrypt.co/60271/zora-nft-carbon-offset-ethereum">here</a>.
               </p>
             </div>
@@ -247,15 +280,25 @@
           </dt>
           <dd class="mt-2 pr-12 hidden" id="faq-3">
             <div class="text-base prose text-gray-500">
-              <p class="mt-4">
+              <p class="mt-2">
+                The organisations that the collected funds are dontated to, are chose by the artists. 
+                Here is a list of the organisations that can be curretnly supported. 
+              </p>
+              <p class="mt-2">
                 <strong id="care-org"><a href="https://www.care.org/">Care.org</a></strong><br>
                 For 75 years, CARE has led the way to a better life for the world’s most vulnerable people. 
                 In 2020, CARE worked in over 100 countries, reaching more than 90 million people through 1,300 projects.
               </p>
-              <p class="mt-4">
-                <strong id="cshrn"><a href="https://cshrn.af/">Civil Society and Human Rights Network (cshrn)</a></strong><br>
-                For 75 years, CARE has led the way to a better life for the world’s most vulnerable people. 
-                In 2020, CARE worked in over 100 countries, reaching more than 90 million people through 1,300 projects.
+              <p class="mt-2">
+                <strong id="cshrn">
+                  <a href="https://www.devex.com/organizations/civil-society-and-human-rights-network-cshrn-74402">
+                    Civil Society and Human Rights Network
+                  </a>
+                </strong><br>
+                The Civil Society and Human Rights network consists of 58 Afghan organizations which are active in the promotion of human rights. 
+                The member organizations have so far all their main offices in Kabul but have representatives also in other regions of Afghanistan. 
+                Besides its member organizations, CSHRN works together with over one hundred partner organizations in different regions of Afghanistan.
+                Read an external review of the network <a href="https://www.humanrights.dk/publications/external-review-civil-society-human-rights-network">here</a>.
               </p>
             </div>
           </dd>
@@ -266,6 +309,17 @@
     </div>
   </div>
 </div>
+
+
+<footer class="bg-gray-50">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+    <div class="mt-8 md:mt-0 md:order-1">
+      <a class="underline" href="https://apeunit.com/impressum.txt" class="text-center text-base text-gray-400">
+        Imprint
+      </a>
+    </div>
+  </div>
+</footer>
 
 </body>
 
