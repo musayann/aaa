@@ -159,7 +159,7 @@
         <div class="pt-6">
           <dt class="text-lg">
             <!-- Expand/collapse question button -->
-            <button type="button" onclick="handleBtnClick(event)" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+            <button type="button" onclick="handleBtnClick(event, 'faq-0')" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
               <h3 class="font-medium text-gray-900">
                 How do I bid on an artwork?
               </h3>
@@ -214,7 +214,7 @@
         <div class="pt-6">
           <dt class="text-lg">
             <!-- Expand/collapse question button -->
-            <button type="button" onclick="handleBtnClick(event)" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-1" aria-expanded="false">
+            <button type="button" onclick="handleBtnClick(event, 'faq-1')" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-1" aria-expanded="false">
               <h3 id="what-is-an-nft" class="font-medium text-gray-900">
                 What is an NFT?
               </h3>
@@ -241,7 +241,7 @@
         <div class="pt-6">
           <dt class="text-lg">
             <!-- Expand/collapse question button -->
-            <button type="button" onclick="handleBtnClick(event)" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-2" aria-expanded="false">
+            <button type="button" onclick="handleBtnClick(event, 'faq-2')" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-2" aria-expanded="false">
               <h3 class="font-medium text-gray-900">
                 Aren’t NFTs really bad for the environment?
               </h3>
@@ -267,7 +267,7 @@
         <div class="pt-6">
           <dt class="text-lg">
             <!-- Expand/collapse question button -->
-            <button type="button" onclick="handleBtnClick(event)" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-3" aria-expanded="false">
+            <button type="button" onclick="handleBtnClick(event, 'faq-3')" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-3" aria-expanded="false">
               <h3 id="organisations" class="font-medium text-gray-900">
                 What organisations are you going to support?
               </h3>
@@ -324,8 +324,7 @@
 </body>
 
 <script>
-  function handleBtnClick(event) {
-      let el_id = event.target.parentElement.getAttribute("aria-controls")
+  function handleBtnClick(event, el_id) {
       // let el_status = event.target.parentElement.getAttribute("aria-expanded")
       toggleElement(el_id)
   }
